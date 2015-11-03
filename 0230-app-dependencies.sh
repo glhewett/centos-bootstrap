@@ -1,1 +1,1 @@
-yum install -y ImageMagick
+yum install -y ImageMagick-devel

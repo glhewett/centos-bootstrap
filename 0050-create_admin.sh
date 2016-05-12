@@ -1,2 +1,5 @@
-groupadd admin
-useradd -k /etc/skel -m -p NP -s /bin/zsh -g admin admin 
+#!/bin/sh
+
+. ./functions.sh
+
+create_user_with_ssh_private_key "admin"

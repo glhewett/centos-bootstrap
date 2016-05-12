@@ -1,1 +1,5 @@
-useradd -k /etc/skel -p NP -m -s /bin/zsh app 
+#!/bin/sh
+
+. ./functions.sh
+
+create_user_with_ssh_private_key "app"
